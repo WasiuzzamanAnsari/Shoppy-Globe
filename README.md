@@ -40,7 +40,7 @@ This project was created as part of an assignment (250 Marks) with the goal of b
 # ⚙️ Installation and Setup Instructions
 
 # 1. Clone the repository
-git clone https://github.com/yourusername/shoppyglobe.git
+git clone https://github.com/WasiuzzamanAnsari/Shoppy-Globe.git
 
 # 2. Navigate to the project directory
 cd shoppyglobe
