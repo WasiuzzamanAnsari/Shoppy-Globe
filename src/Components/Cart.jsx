@@ -24,22 +24,25 @@ const Cart = () => {
           </h1>
 
           {/* 🧾 Cart Table */}
-          <table className="w-full bg-white shadow-xl rounded-xl overflow-hidden">
-            <thead className="bg-indigo-600 text-white">
-              <tr>
-                <th className="py-4 px-4 text-left">No.</th>
-                <th className="py-4 px-4 text-left">Image</th>
-                <th className="py-4 px-4 text-left">Product Name</th>
-                <th className="py-4 px-4 text-left">Price</th>
-                <th className="py-4 px-4 text-left">Operation</th>
-              </tr>
-            </thead>
-            <tbody>
-              {cartItems.map((item, index) => (
-                <CartItem key={item.id} CartItems={item} index={index} />
-              ))}
-            </tbody>
-          </table>
+<div className="w-full overflow-x-auto rounded-xl shadow-xl">
+  <table className="min-w-full bg-white">
+    <thead className="bg-indigo-600 text-white">
+      <tr>
+        <th className="py-4 px-4 text-left whitespace-nowrap">No.</th>
+        <th className="py-4 px-4 text-left whitespace-nowrap">Image</th>
+        <th className="py-4 px-4 text-left whitespace-nowrap">Product Name</th>
+        <th className="py-4 px-4 text-left whitespace-nowrap">Price</th>
+        <th className="py-4 px-4 text-left whitespace-nowrap">Operation</th>
+      </tr>
+    </thead>
+    <tbody>
+      {cartItems.map((item, index) => (
+        <CartItem key={item.id} CartItems={item} index={index} />
+      ))}
+    </tbody>
+  </table>
+</div>
+
 
           {/* 📦 Cart Summary */}
           <div className="flex flex-col md:flex-row justify-between items-center mt-8 bg-gray-100 p-6 rounded-xl shadow-md transition-all duration-300">
